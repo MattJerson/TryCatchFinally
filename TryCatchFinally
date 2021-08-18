@@ -1,0 +1,27 @@
+package test;
+import java.util.Scanner;
+public class Test {
+public static void main(String[] args) {
+Scanner X = new Scanner(System.in);
+try{
+System.out.println("==========================");
+System.out.println("Calculator For Area Of Circle & Sphere");
+System.out.println("==========================");
+System.out.print("Enter Radius Of Circle:");
+Double R = X.nextDouble();
+Double Area = Math.PI * R* R;        
+System.out.println("Area = "+Area);
+System.out.println("==========================");
+System.out.print("Enter Radius Of Sphere:");
+Double S = X.nextDouble();
+Double A = 4 * Math.PI * S * S;
+System.out.println("Area = "+A);
+System.out.println("==========================");    
+}catch(Exception e){
+System.out.println("Please Enter A Number!");  
+}finally{ 
+System.out.println("Thank You For Using My Program!");
+System.exit(0);
+}
+}
+}
